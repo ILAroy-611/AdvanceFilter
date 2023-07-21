@@ -25,7 +25,7 @@ function Home() {
     fetchData();
   }, []);
 
-  console.log(data)
+  // console.log(data)
   return (
     <>
       {data?.length ? (

@@ -37,7 +37,7 @@ function DataTable({ columns, data, pagination }) {
         pageStart={0}
         loadMore={loadMore}
         hasMore={hasMore}
-        loader={<h4 className="loader">Loading...</h4>}
+        // loader={<h4 className="loader">Loading...</h4>}
       >
         {showItems(data)}
       </InfiniteScroll>
