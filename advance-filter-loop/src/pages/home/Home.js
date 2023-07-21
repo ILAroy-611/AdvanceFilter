@@ -25,9 +25,10 @@ function Home() {
     fetchData();
   }, []);
 
+  console.log(data)
   return (
     <>
-      {data !== null ? (
+      {data.length !== 0 ? (
         <DataTable
           columns={columns}
           data={filteredRows.length == 0 ? data : filteredRows}

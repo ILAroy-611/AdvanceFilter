@@ -1,0 +1,23 @@
+.virtual-list{
+    padding:1rem;
+}
+
+.filter-footer{
+    height:1.5rem;
+    padding:0.5rem 1rem;
+    border-top:1px solid rgb(223, 220, 220);
+    border-radius: 0.5rem;
+    margin-top:1rem;
+}
+
+.filter-search{
+    outline:none;
+    border:1px solid rgb(223, 220, 220);
+    height:1.4rem;
+    margin:0.5rem;
+    border-radius: 0.5rem;
+}
+
+.filter-search:focus{
+    outline:none;
+}
