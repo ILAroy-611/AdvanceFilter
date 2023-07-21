@@ -28,7 +28,7 @@ function Home() {
   console.log(data)
   return (
     <>
-      {data.length !== 0 ? (
+      {data?.length ? (
         <DataTable
           columns={columns}
           data={filteredRows.length == 0 ? data : filteredRows}
