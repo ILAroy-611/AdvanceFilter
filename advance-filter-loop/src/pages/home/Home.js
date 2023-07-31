@@ -7,7 +7,7 @@ import DataTable from "../../components/dataTable/DataTable";
 import { columns } from "./helper";
 
 function Home() {
-  const { data, setData } = useContext(DataContext);
+  const { data, filteredRows, setData } = useContext(DataContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,8 +30,8 @@ function Home() {
       {data !== null ? (
         <DataTable
           columns={columns}
-          data={data}
-          pagination={{ pageSize: 100, total: data?.length }}
+          data={filteredRows.length == 0 ? data : filteredRows}
+          pagination={{ pageSize: 100, total: filteredRows.length == 0 ? data?.length : filteredRows?.length  }}
         />
       ) : (
         <></>
